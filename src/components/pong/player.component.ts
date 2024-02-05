@@ -5,13 +5,13 @@ export default class Player extends Rect
 {
     vel: Vec;
     score: number;
-    private _lastPos: Vec;
+
+    public _lastPos: Vec;
     constructor()
     {
         super(20, 100);
         this.vel = new Vec();
         this.score = 0;
-
         this._lastPos = new Vec();
     }
     update(dt:number)
